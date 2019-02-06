@@ -1,4 +1,4 @@
-### STAT4401, Assignment 3: MNIST Digit Recognition ###
+### MNIST Digit Recognition ###
 
 ############################ Load Libraries ###################################
 
@@ -157,7 +157,7 @@ for i in IndFind(pred_val, actual, test_preds, y_test_classes):
 ##################### Save the model ##########################################
 
 ## Set WD
-#os.chdir('C:/Users/robca/Desktop/University/Year 4, 2018/Semester 2/STAT4401/Assignment 3/Q3')
+#os.chdir('')
 ## Save Model
 #model_json=model.to_json()
 #with open("NN_model_MNIST.json","w") as json_file:
@@ -166,16 +166,16 @@ for i in IndFind(pred_val, actual, test_preds, y_test_classes):
 
 ##################### Load a model ############################################
 
-json_file = open('NN_model_MNIST.json', 'r')
-loaded_model_json = json_file.read()
-json_file.close()
-loaded_model = model_from_json(loaded_model_json)
-# load weights into new model
-loaded_model.load_weights("NN_model_MNIST.h5")
-print("Model has been loaded")
-
-# Compile the model
-loaded_model.compile(optimizer=optimizer, 
-              loss='categorical_crossentropy', 
-              metrics=['accuracy'])
+#json_file = open('NN_model_MNIST.json', 'r')
+#loaded_model_json = json_file.read()
+#json_file.close()
+#loaded_model = model_from_json(loaded_model_json)
+## load weights into new model
+#loaded_model.load_weights("NN_model_MNIST.h5")
+#print("Model has been loaded")
+#
+## Compile the model
+#loaded_model.compile(optimizer=optimizer, 
+#              loss='categorical_crossentropy', 
+#              metrics=['accuracy'])
 
